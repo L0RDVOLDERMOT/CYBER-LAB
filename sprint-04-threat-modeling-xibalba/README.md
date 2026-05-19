@@ -1,20 +1,16 @@
-# Sprint 4 — Threat Modeling: Xibalba Interactive
+# Sprint 4: Threat Modeling, Xibalba Interactive
 
-**Type:** Application Threat Modeling  
-**Client:** Xibalba Interactive  
-**Deliverables:** Threat Modeling Worksheet · Threat Model Report  
-
----
+Type: Application Threat Modeling  
+Client: Xibalba Interactive  
+Deliverables: Threat Modeling Worksheet, Threat Model Report
 
 ## Objective
 
 Apply structured threat modeling methodology to Xibalba Interactive's application architecture. Identify threats systematically, evaluate them, and recommend mitigations.
 
----
-
 ## Methodology
 
-Applied **STRIDE** threat classification:
+Applied STRIDE threat classification:
 
 | Letter | Threat | Property Violated |
 |---|---|---|
@@ -27,19 +23,14 @@ Applied **STRIDE** threat classification:
 
 ### Process
 
-1. **Decompose** the application — Data Flow Diagrams (DFD)
-2. **Identify trust boundaries** between components
-3. **Enumerate threats** per element using STRIDE
-4. **Rate threats** by likelihood and impact
-5. **Define mitigations** mapped to specific controls
-
----
+1. Decompose the application via Data Flow Diagrams (DFD).
+2. Identify trust boundaries between components.
+3. Enumerate threats per element using STRIDE.
+4. Rate threats by likelihood and impact.
+5. Define mitigations mapped to specific controls.
 
 ## Deliverables
 
-- **Threat Modeling Worksheet** — per-element STRIDE enumeration with severity scoring
-- **Threat Model Report** — executive summary, DFD, identified threats, and mitigation recommendations
+Threat Modeling Worksheet contains the per-element STRIDE enumeration with severity scoring. Threat Model Report includes executive summary, DFD, identified threats, and mitigation recommendations.
 
----
-
-*TripleTen Sprint 4 — Threat Modeling Module*
+TripleTen Sprint 4, Threat Modeling Module.
