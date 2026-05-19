@@ -1,26 +1,15 @@
-# Sprint 1 — Network Configuration
+# Sprint 1: Network Configuration
 
-**Type:** Network Foundations — Topology & IP Planning  
-**Deliverable:** Network configuration presentation  
-
----
+Type: Network Foundations, Topology and IP Planning  
+Deliverable: Network configuration presentation
 
 ## Objective
 
-Design and document a baseline network configuration covering topology choices, IP addressing scheme, subnetting strategy, and routing/switching decisions for an enterprise environment.
-
----
+Design and document a baseline network configuration covering topology choices, IP addressing scheme, subnetting strategy, and routing and switching decisions for an enterprise environment.
 
 ## Skills Demonstrated
 
-- Network topology design (star, mesh, hybrid)
-- IPv4 addressing and subnetting (CIDR notation, VLSM)
-- VLAN segmentation for security zones
-- Routing protocol selection
-- Switch port configuration logic
-- Network documentation standards
-
----
+Network topology design (star, mesh, hybrid). IPv4 addressing and subnetting (CIDR, VLSM). VLAN segmentation for security zones. Routing protocol selection. Switch port configuration logic. Network documentation standards.
 
 ## Key Concepts Applied
 
@@ -29,8 +18,6 @@ Design and document a baseline network configuration covering topology choices, 
 | Subnetting | Divided allocated address space into functional subnets |
 | VLAN Design | Separated user, server, management, and DMZ traffic |
 | Default Gateway Strategy | Routing between subnets via L3 device |
-| Broadcast Domain Control | Minimized broadcast scope via VLAN/subnet boundaries |
+| Broadcast Domain Control | Minimized broadcast scope via VLAN and subnet boundaries |
 
----
-
-*TripleTen Sprint 1 — Network Foundations Module*
+TripleTen Sprint 1, Network Foundations Module.
