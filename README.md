@@ -1,141 +1,75 @@
-# CHIBUIKE CLEMENT — THREAT HUNTING PORTFOLIO
+<div align="center">
 
-![Threat Hunting](https://img.shields.io/badge/Focus-Threat%20Hunting-blue?style=for-the-badge)
-![SIEM](https://img.shields.io/badge/SIEM-Splunk-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Actively%20Seeking-brightgreen?style=for-the-badge)
+# CYBER-LAB
 
-Cybersecurity portfolio demonstrating **threat detection, investigation, and detection engineering** across simulated enterprise environments.
+### Offensive & Defensive Cybersecurity Portfolio
 
-Focused on identifying **attack patterns, anomalous behavior, and adversary techniques** using SIEM, network traffic analysis, and log correlation.
+[![Security+](https://img.shields.io/badge/CompTIA-Security%2B-E3261F?style=flat-square&logo=comptia&logoColor=white)](https://github.com/L0RDVOLDERMOT/CYBER-LAB)
+[![CEH](https://img.shields.io/badge/EC--Council-CEH-005A8E?style=flat-square)](https://github.com/L0RDVOLDERMOT/CYBER-LAB)
+[![CySA+](https://img.shields.io/badge/CompTIA-CySA%2B%20In%20Progress-FF6B00?style=flat-square&logo=comptia&logoColor=white)](https://github.com/L0RDVOLDERMOT/CYBER-LAB)
+[![TripleTen](https://img.shields.io/badge/TripleTen-Cybersecurity%20Bootcamp-6C3483?style=flat-square)](https://github.com/L0RDVOLDERMOT/CYBER-LAB)
 
----
+**Tools:** Metasploit · WPScan · Nmap · Wireshark · Splunk · Hydra · Burp Suite · Netcat
 
-## 🧠 CORE CAPABILITIES
-
-* Threat Hunting & Hypothesis-Driven Investigation
-* SIEM Analysis (Splunk — SPL Query Development)
-* Network Traffic Analysis (PCAP, Wireshark)
-* Incident Triage & Escalation
-* Attack Pattern Identification (Brute Force, Enumeration)
-* MITRE ATT&CK Mapping & Adversary Behavior Analysis
+</div>
 
 ---
 
-## 📁 PROJECT PORTFOLIO
-
-### 🔴 THREAT HUNTING & DETECTION ENGINEERING (PRIMARY FOCUS)
-
-#### Threat Hunt: Brute Force Detection Across Logs
-
-* Developed SPL queries to detect repeated authentication failures
-* Identified abnormal login patterns across multiple events
-* Tuned detection to reduce false positives
-* Mapped activity to **MITRE ATT&CK T1110 (Brute Force)**
-
-**Detection Logic:**
-
-* High volume login attempts from single source
-* Repeated failed authentication events
-* Suspicious user-agent patterns
+Real-world attack and defense work performed across simulated enterprise environments. Each project folder contains a full writeup: methodology, tools, findings, MITRE ATT&CK mapping, and remediation.
 
 ---
 
-#### Detection Engineering: Suspicious User-Agent Activity
+## Repository Structure
 
-* Built detection queries for malicious tools (e.g., Hydra)
-* Parsed HTTP logs to identify automation patterns
-* Correlated request frequency and headers
-
-**Outcome:**
-
-* Identified automated attack behavior
-* Created reusable detection logic
-
----
-
-### 🟠 INCIDENT RESPONSE & INVESTIGATION
-
-#### WordPress Brute Force Attack Investigation
-
-* Analyzed PCAP data to identify authentication attack
-* Source: `192.168.100.20` → Target: `192.168.100.2`
-* Detected repeated POST requests to `/wp-login.php`
-* Confirmed Hydra-based brute force activity
-
-**Analysis Techniques:**
-
-* Packet inspection (Wireshark)
-* HTTP request correlation
-* Timeline reconstruction
-
----
-
-### 🔵 OFFENSIVE SECURITY (ADVERSARY SIMULATION)
-
-#### Network Scanning & Enumeration
-
-* Identified open ports and exposed services using Nmap
-* Performed service fingerprinting and OS detection
-* Mapped attack surface for exploitation planning
-
----
-
-#### Exploitation & Post-Exploitation
-
-* Executed attacks using Metasploit
-* Conducted post-exploitation enumeration
-* Documented attack paths and system access
-
----
-
-## 🛠️ DETECTION LIBRARY (CRITICAL SECTION)
-
-### Brute Force Detection (Splunk SPL)
-
-```spl
-index=* sourcetype=auth_logs
-| stats count by src_ip, user
-| where count > 20
+```
+CYBER-LAB/
+├── 01-wordpress-pentest/        # Web app exploitation — MegaQuagga target
+├── 02-pcap-soc-analysis/        # PCAP triage — Hydra brute-force detection
+├── 03-splunk-o365-investigation/ # SIEM threat hunting — OneDrive audit logs
+└── 04-network-recon/            # Network reconnaissance — Nmap methodology
 ```
 
 ---
 
-### Suspicious User-Agent Detection
+## Project Portfolio
 
-```spl
-index=* sourcetype=http_logs
-| search user_agent="*Hydra*"
-```
-
----
-
-## 📊 SAMPLE THREAT HUNT WORKFLOW
-
-1. Define hypothesis (e.g., brute force activity present)
-2. Identify relevant log sources
-3. Develop SPL queries
-4. Analyze patterns and anomalies
-5. Validate findings
-6. Document results and detection logic
+| # | Project | Domain | Tools | MITRE Techniques | Status |
+|---|---|---|---|---|---|
+| 01 | [WordPress Pentest — MegaQuagga](./01-wordpress-pentest/) | Offensive | WPScan, Nmap, Metasploit | T1190, T1078, T1059 | ✅ Complete |
+| 02 | [PCAP SOC Analysis — Brute Force Detection](./02-pcap-soc-analysis/) | Defensive / SOC | Wireshark, Hydra | T1110, T1071 | ✅ Complete |
+| 03 | [Splunk O365 Audit Investigation](./03-splunk-o365-investigation/) | Threat Hunting | Splunk, O365 Audit | T1078, T1566 | ✅ Complete |
+| 04 | [Network Reconnaissance Lab](./04-network-recon/) | Offensive | Nmap, Netcat | T1595, T1046 | ✅ Complete |
 
 ---
 
-## 🏆 CERTIFICATIONS
+## Skills Demonstrated
 
-* CompTIA Security+
-* CompTIA CySA+
-* Certified Ethical Hacker (CEH)
+**Offensive**
+`WPScan` `Nmap` `Metasploit` `Netcat` `Hydra` `CVE Exploitation` `Credential Harvesting`
 
----
+**Defensive / SOC**
+`Wireshark` `PCAP Analysis` `Splunk SPL` `O365 Audit Logs` `IOC Identification` `Alert Triage`
 
-## 📌 CURRENT FOCUS
-
-* Detection Engineering (Splunk SPL Development)
-* Threat Hunting Methodologies
-* Active Directory Attack Simulation
+**Frameworks**
+`MITRE ATT&CK` `Cyber Kill Chain` `NIST CSF`
 
 ---
 
-## 📜 DISCLAIMER
+## MITRE ATT&CK Coverage
 
-All activities conducted in controlled lab environments.
+| Technique ID | Name | Project |
+|---|---|---|
+| T1190 | Exploit Public-Facing Application | WordPress Pentest |
+| T1078 | Valid Accounts | WordPress Pentest, O365 Investigation |
+| T1059 | Command & Scripting Interpreter | WordPress Pentest |
+| T1110 | Brute Force | PCAP SOC Analysis |
+| T1071 | Application Layer Protocol | PCAP SOC Analysis |
+| T1566 | Phishing (initial access context) | O365 Investigation |
+| T1595 | Active Scanning | Network Recon |
+| T1046 | Network Service Discovery | Network Recon |
+
+---
+
+<div align="center">
+<sub>Built by <a href="https://linkedin.com/in/clement-ojukwu">Chibuike Ojukwu Clement</a> · CompTIA Security+ · CEH · CySA+ In Progress</sub>
+</div>
