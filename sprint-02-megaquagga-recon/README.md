@@ -1,15 +1,11 @@
-# Sprint 2 — MegaQuagga Reconnaissance
+# Sprint 2: MegaQuagga Reconnaissance
 
-**Type:** Offensive Recon — Pre-engagement Information Gathering  
-**Target:** MegaQuagga internal network (192.168.100.0/24)  
-
----
+Type: Offensive Recon, Pre-engagement Information Gathering  
+Target: MegaQuagga internal network (192.168.100.0/24)
 
 ## Objective
 
 Perform structured reconnaissance against the MegaQuagga internal environment to identify live hosts, exposed services, and viable attack surface for downstream pentest phases (sprints 8 and 9).
-
----
 
 ## Methodology
 
@@ -29,10 +25,7 @@ nmap -O 192.168.100.2
 ```
 
 ### DNS Confirmation
-- Confirmed www.megaquagga.local → 192.168.100.2
-- Internal name resolution operational
-
----
+Confirmed www.megaquagga.local resolves to 192.168.100.2. Internal name resolution operational.
 
 ## Findings Summary
 
@@ -42,16 +35,12 @@ nmap -O 192.168.100.2
 | 192.168.100.2 | Web Server (WordPress) | 22/SSH, 80/HTTP, 443/HTTPS, 8080, 3389 |
 | 192.168.100.254 | Network Device | Management |
 
----
-
 ## MITRE ATT&CK Mapping
 
 | Tactic | Technique | ID |
 |---|---|---|
-| Reconnaissance | Active Scanning — IP Block Scanning | T1595.001 |
+| Reconnaissance | Active Scanning, IP Block Scanning | T1595.001 |
 | Discovery | Network Service Discovery | T1046 |
 | Discovery | System Information Discovery | T1082 |
 
----
-
-*TripleTen Sprint 2 — Reconnaissance Module · Feeds into Sprint 8 and Sprint 9*
+TripleTen Sprint 2, Reconnaissance Module. Feeds into Sprint 8 and Sprint 9.
